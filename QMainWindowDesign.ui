@@ -157,7 +157,10 @@
        </widget>
       </item>
       <item row="2" column="6">
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="btn_9">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -192,11 +195,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="4" column="6">
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="btn_6">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -231,11 +243,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="2" column="4">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btn_8">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -270,11 +291,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="6" column="4">
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="btn_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -309,11 +339,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="6" column="6">
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="btn_3">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -348,11 +387,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="4" column="2">
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="btn_4">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -387,11 +435,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="6" column="2">
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="btn_1">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -426,11 +483,20 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
       <item row="4" column="4">
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="btn_5">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -465,6 +531,12 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -495,7 +567,10 @@ QPushButton:pressed {
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="btn_7">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -530,6 +605,12 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -748,7 +829,7 @@ QPushButton:pressed {
       <item>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
-         <widget class="QPushButton" name="pushButton_10">
+         <widget class="QPushButton" name="btn_game_start">
           <property name="font">
            <font>
             <pointsize>10</pointsize>

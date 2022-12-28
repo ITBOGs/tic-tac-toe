@@ -89,15 +89,16 @@ class Ui_MainWindow(object):
         self.line_72.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_72.setObjectName("line_72")
         self.gridLayout.addWidget(self.line_72, 2, 1, 1, 1)
-        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_9 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_9.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
-        self.pushButton_3.setSizePolicy(sizePolicy)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_3.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_3.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_9.sizePolicy().hasHeightForWidth())
+        self.btn_9.setSizePolicy(sizePolicy)
+        self.btn_9.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_9.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_9.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -109,18 +110,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_3.setText("")
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.gridLayout.addWidget(self.pushButton_3, 2, 6, 1, 1)
-        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_9.setText("")
+        self.btn_9.setIconSize(QtCore.QSize(60, 60))
+        self.btn_9.setObjectName("btn_9")
+        self.gridLayout.addWidget(self.btn_9, 2, 6, 1, 1)
+        self.btn_6 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_6.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
-        self.pushButton_4.setSizePolicy(sizePolicy)
-        self.pushButton_4.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_4.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_4.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_6.sizePolicy().hasHeightForWidth())
+        self.btn_6.setSizePolicy(sizePolicy)
+        self.btn_6.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_6.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_6.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -132,18 +135,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_4.setText("")
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.gridLayout.addWidget(self.pushButton_4, 4, 6, 1, 1)
-        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_6.setText("")
+        self.btn_6.setIconSize(QtCore.QSize(60, 60))
+        self.btn_6.setObjectName("btn_6")
+        self.gridLayout.addWidget(self.btn_6, 4, 6, 1, 1)
+        self.btn_8 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_8.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_2.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_2.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_8.sizePolicy().hasHeightForWidth())
+        self.btn_8.setSizePolicy(sizePolicy)
+        self.btn_8.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_8.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_8.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -155,18 +160,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_2.setText("")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.gridLayout.addWidget(self.pushButton_2, 2, 4, 1, 1)
-        self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_8.setText("")
+        self.btn_8.setIconSize(QtCore.QSize(60, 60))
+        self.btn_8.setObjectName("btn_8")
+        self.gridLayout.addWidget(self.btn_8, 2, 4, 1, 1)
+        self.btn_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_2.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
-        self.pushButton_6.setSizePolicy(sizePolicy)
-        self.pushButton_6.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_6.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_6.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_2.sizePolicy().hasHeightForWidth())
+        self.btn_2.setSizePolicy(sizePolicy)
+        self.btn_2.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_2.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_2.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -178,18 +185,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_6.setText("")
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.gridLayout.addWidget(self.pushButton_6, 6, 4, 1, 1)
-        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_2.setText("")
+        self.btn_2.setIconSize(QtCore.QSize(60, 60))
+        self.btn_2.setObjectName("btn_2")
+        self.gridLayout.addWidget(self.btn_2, 6, 4, 1, 1)
+        self.btn_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_3.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
-        self.pushButton_5.setSizePolicy(sizePolicy)
-        self.pushButton_5.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_5.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_5.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_3.sizePolicy().hasHeightForWidth())
+        self.btn_3.setSizePolicy(sizePolicy)
+        self.btn_3.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_3.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_3.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -201,18 +210,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_5.setText("")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.gridLayout.addWidget(self.pushButton_5, 6, 6, 1, 1)
-        self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_3.setText("")
+        self.btn_3.setIconSize(QtCore.QSize(60, 60))
+        self.btn_3.setObjectName("btn_3")
+        self.gridLayout.addWidget(self.btn_3, 6, 6, 1, 1)
+        self.btn_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_4.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_8.sizePolicy().hasHeightForWidth())
-        self.pushButton_8.setSizePolicy(sizePolicy)
-        self.pushButton_8.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_8.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_8.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_4.sizePolicy().hasHeightForWidth())
+        self.btn_4.setSizePolicy(sizePolicy)
+        self.btn_4.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_4.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_4.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -224,18 +235,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_8.setText("")
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.gridLayout.addWidget(self.pushButton_8, 4, 2, 1, 1)
-        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_4.setText("")
+        self.btn_4.setIconSize(QtCore.QSize(60, 60))
+        self.btn_4.setObjectName("btn_4")
+        self.gridLayout.addWidget(self.btn_4, 4, 2, 1, 1)
+        self.btn_1 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_1.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_7.sizePolicy().hasHeightForWidth())
-        self.pushButton_7.setSizePolicy(sizePolicy)
-        self.pushButton_7.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_7.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_7.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_1.sizePolicy().hasHeightForWidth())
+        self.btn_1.setSizePolicy(sizePolicy)
+        self.btn_1.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_1.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_1.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -247,18 +260,20 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_7.setText("")
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.gridLayout.addWidget(self.pushButton_7, 6, 2, 1, 1)
-        self.pushButton_9 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_1.setText("")
+        self.btn_1.setIconSize(QtCore.QSize(60, 60))
+        self.btn_1.setObjectName("btn_1")
+        self.gridLayout.addWidget(self.btn_1, 6, 2, 1, 1)
+        self.btn_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_5.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
-        self.pushButton_9.setSizePolicy(sizePolicy)
-        self.pushButton_9.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton_9.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton_9.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_5.sizePolicy().hasHeightForWidth())
+        self.btn_5.setSizePolicy(sizePolicy)
+        self.btn_5.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_5.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_5.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -270,9 +285,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton_9.setText("")
-        self.pushButton_9.setObjectName("pushButton_9")
-        self.gridLayout.addWidget(self.pushButton_9, 4, 4, 1, 1)
+        self.btn_5.setText("")
+        self.btn_5.setIconSize(QtCore.QSize(60, 60))
+        self.btn_5.setObjectName("btn_5")
+        self.gridLayout.addWidget(self.btn_5, 4, 4, 1, 1)
         self.line_45 = QtWidgets.QFrame(self.centralwidget)
         self.line_45.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.line_45.setFrameShadow(QtWidgets.QFrame.Plain)
@@ -285,15 +301,16 @@ class Ui_MainWindow(object):
         self.line_46.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_46.setObjectName("line_46")
         self.gridLayout.addWidget(self.line_46, 1, 6, 1, 1)
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_7 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_7.setEnabled(False)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        self.pushButton.setMinimumSize(QtCore.QSize(100, 100))
-        self.pushButton.setMaximumSize(QtCore.QSize(120, 120))
-        self.pushButton.setStyleSheet("QPushButton {\n"
+        sizePolicy.setHeightForWidth(self.btn_7.sizePolicy().hasHeightForWidth())
+        self.btn_7.setSizePolicy(sizePolicy)
+        self.btn_7.setMinimumSize(QtCore.QSize(100, 100))
+        self.btn_7.setMaximumSize(QtCore.QSize(120, 120))
+        self.btn_7.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    border: none;\n"
 "}\n"
@@ -305,9 +322,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: #888;\n"
 "}")
-        self.pushButton.setText("")
-        self.pushButton.setObjectName("pushButton")
-        self.gridLayout.addWidget(self.pushButton, 2, 2, 1, 1)
+        self.btn_7.setText("")
+        self.btn_7.setIconSize(QtCore.QSize(60, 60))
+        self.btn_7.setObjectName("btn_7")
+        self.gridLayout.addWidget(self.btn_7, 2, 2, 1, 1)
         self.line_14 = QtWidgets.QFrame(self.centralwidget)
         self.line_14.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.line_14.setFrameShadow(QtWidgets.QFrame.Plain)
@@ -387,12 +405,12 @@ class Ui_MainWindow(object):
         self.verticalLayout.addItem(spacerItem4)
         self.gridLayout_2 = QtWidgets.QGridLayout()
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.pushButton_10 = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_game_start = QtWidgets.QPushButton(self.centralwidget)
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.pushButton_10.setFont(font)
-        self.pushButton_10.setObjectName("pushButton_10")
-        self.gridLayout_2.addWidget(self.pushButton_10, 0, 0, 1, 1)
+        self.btn_game_start.setFont(font)
+        self.btn_game_start.setObjectName("btn_game_start")
+        self.gridLayout_2.addWidget(self.btn_game_start, 0, 0, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout_2)
         self.horizontalLayout.addLayout(self.verticalLayout)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -403,7 +421,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Крестики-нолики"))
-        self.pushButton_10.setText(_translate("MainWindow", "Старт"))
+        self.btn_game_start.setText(_translate("MainWindow", "Старт"))
 
 
 if __name__ == "__main__":
