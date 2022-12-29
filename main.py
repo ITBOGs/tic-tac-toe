@@ -2,8 +2,8 @@ import sys
 import random
 
 from QMainWindowDesign import Ui_MainWindow
-from PyQt5.QtWidgets import QMainWindow, QApplication
-from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QMainWindow, QApplication, QGraphicsScene
+from PyQt5.QtGui import QIcon, QPixmap
 
 
 class GameControl(QMainWindow):
@@ -22,6 +22,12 @@ class GameControl(QMainWindow):
 		                 self.ui.btn_9
 		                 ]
 
+		self.table = [
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1]
+		]
+
 		self.ui.btn_1.clicked.connect(lambda: self.make_turn(1))
 		self.ui.btn_2.clicked.connect(lambda: self.make_turn(2))
 		self.ui.btn_3.clicked.connect(lambda: self.make_turn(3))
@@ -33,6 +39,17 @@ class GameControl(QMainWindow):
 		self.ui.btn_9.clicked.connect(lambda: self.make_turn(9))
 
 		self.ui.btn_game_start.clicked.connect(lambda: self.game_start())
+
+		# self.scene = QGraphicsScene()
+		# self.ui.scene.setScene(self.scene)
+		# self.ui.scene.setStyleSheet("background-color: #c0c0c0")
+		#
+		# pixmap = QPixmap('icon/man.png')
+		# pixmapitem = self.scene.addPixmap(pixmap)
+		# pixmapitem.setScale(0.2)
+		#
+		# pixmapitem.setPos(0, 100)
+		# pass
 
 	def game_start(self) -> None:
 		"""Начало игры\n
@@ -46,6 +63,32 @@ class GameControl(QMainWindow):
 
 		self.set_btn_state(flag=True)
 		self.del_btn_icon()
+
+		self.player_cross = not self.player_cross
+		self.player_turn = self.player_cross
+
+		self.table = [  # Таблица полностью отражена от настоящего поля
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1]
+		]
+
+		btn_style = """
+		QPushButton {
+		    background-color: transparent;
+		    border: none;
+		}
+		
+		QPushButton:hover{
+		    background-color: #c0c0c0;
+		}
+		
+		QPushButton:pressed {
+		    background-color: #888;
+		}"""
+
+		for i in self.btn_list:
+			i.setStyleSheet(btn_style)
 
 	def set_btn_state(self, btn_item: int = 1, flag:  bool = False) -> None:
 		"""Устанавливает состояние для определенной кнопки поля или для всех кнопок сразу\n
@@ -67,11 +110,64 @@ class GameControl(QMainWindow):
 
 		if self.player_turn == self.player_cross:
 			self.btn_list[btn_item].setIcon(QIcon('icon/cross.png'))
+			self.table[btn_item // 3][btn_item % 3] = 1
 		else:
 			self.btn_list[btn_item].setIcon(QIcon('icon/circle.png'))
+			self.table[btn_item // 3][btn_item % 3] = 0
 
 		self.player_turn = not self.player_turn
 		self.btn_list[btn_item].setDisabled(True)
+
+		self.check_win()
+
+	def check_win(self) -> None:
+		"""Проверка выигрыша"""
+
+		for y in range(3):  # горизонтально
+			flag = not(-1 in self.table[y])
+
+			for x in range(2):
+				f = self.table[y][x] == self.table[y][x+1]
+				flag = flag and f
+
+			if flag:
+				self.set_win(y*3+1, y*3+2, y*3+3)
+				return
+
+		for x in range(3):  # вертикально
+			flag = True
+
+			for y in range(2):
+				f = self.table[y][x] == self.table[y+1][x]
+				f = f and self.table[y][x] != -1 and self.table[y+1][x] != -1
+				flag = flag and f
+
+			if flag:
+				self.set_win(x+1, 3+x+1, 6+x+1)
+				return
+
+		if self.table[0][0] == self.table[1][1] == self.table[2][2] and self.table[0][0] != -1:
+			self.set_win(1, 5, 9)
+			return
+
+		if self.table[0][2] == self.table[1][1] == self.table[2][0] and self.table[0][2] != -1:
+			self.set_win(7, 5, 3)
+			return
+
+	def set_win(self, btn_win_1: int, btn_win_2: int, btn_win_3: int) -> None:
+		self.btn_list[btn_win_1 - 1].setStyleSheet("background-color: #5aff51; border: None")
+		self.btn_list[btn_win_2 - 1].setStyleSheet("background-color: #5aff51; border: None")
+		self.btn_list[btn_win_3 - 1].setStyleSheet("background-color: #5aff51; border: None")
+
+		for i in self.btn_list:
+			i.setDisabled(True)
+
+		if self.player_cross == True and self.table[btn_win_1 // 3][btn_win_1 % 3] == 1:
+			print('player')
+		elif self.player_cross == False and self.table[btn_win_1 // 3][btn_win_1 % 3] == 0:
+			print('player')
+		else:
+			print('bot')
 
 	def del_btn_icon(self, btn_item: int = 1) -> None:
 		"""Удаляет иконку для определенной кнопки поля или для всех кнопок сразу\n
